@@ -1,0 +1,25 @@
+dbinom(3,5,0.95)
+dbinom(c(0:5),5,0.95)
+dbinom(c(0:5),20,0.2)
+dbinom(c(0:5),100,0.01)
+par(mfrow = c(3,1))
+x<-0:5
+plot(x,dbinom(x,5,0.95))
+x<-0:20
+plot(x,dbinom(x,20,0.2))
+plot(x,dbinom(x,100,0.01))
+pbinom(3,5,0.95)
+1-pbinom(3,5,0.95)
+pbinom(4,20,0.2)
+1-pbinom(4,20,0.2)
+x<-0:5
+p<-pbinom(x,5,0.95)
+p
+round(p,4)
+x<-0:20
+p<-pbinom(x,20,0.2)
+p
+round(p,4)
+sum(dbinom(c(10:15),15,0.4))
+sum(dbinom(c(3:8),15,0.4))
+dbinom(3,15,0.4)
